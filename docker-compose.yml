@@ -7,6 +7,7 @@ services:
       - "65030:65030"
     environment:
       SERVICES_PRICE_URL: http://host.docker.internal:65020
+      OTEL_EXPORTER_OTLP_ENDPOINT: http://host.docker.internal:4317
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:65030/actuator/metrics/process.uptime"]
       interval: 1m30s

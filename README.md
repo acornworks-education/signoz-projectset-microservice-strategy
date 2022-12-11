@@ -1,2 +1,1 @@
-# projectset-microservice-strategy
-Strategy Microservice ProjectSet
+Strategy Microservice with Signoz Integration

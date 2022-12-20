@@ -3,6 +3,7 @@ version: "3.6"
 services:
   strategy:
     build: .
+    image: k830206/signoz-strategy:latest
     ports:
       - "65030:65030"
     environment:
